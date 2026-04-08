@@ -38,6 +38,7 @@ class CreateCharacterView(APIView):
                 author=user_profile,
                 name = name,
                 profile = profile,
+                photo = photo,
                 background_image = background_image,
             )
             return Response({

@@ -30,8 +30,8 @@ class UpdateCharacterView(APIView):
                 remove_old_photo(character.photo)
                 character.photo = photo
             if background_image:
-                remove_old_photo(character.background_img)
-                character.background_img = background_image
+                remove_old_photo(character.background_image)
+                character.background_image = background_image
             character.name = name
             character.profile = profile
             character.update_time = now()
